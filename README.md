@@ -1,10 +1,15 @@
 # RainforestAutomationEagle
 [unofficial] Rainforest Automation Eagle API Wrapper
 
-## Usage:
-```
-from eagle import Eagle
+## Requirements:
+* [requests](http://docs.python-requests.org/)
 
+## Usage:
+```py
+# import eagle
+from RainforestAutomationEagle.eagle import Eagle
+
+# 
 eagle = Eagle(user="<cloud-ID>",
               password="<installation-code>",
               ipaddress="<eagle-IP-address>")

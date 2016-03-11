@@ -59,6 +59,17 @@ response.device_model_id
 response.device_link_key_hi
 ```
 
+### get_price
+```py
+response = eagle.get_price(MacId="0xd8d5b90000000000")
+
+response.price_units
+response.price
+response.price_timestamp
+response.price_label
+```
+
+
 ## Making a generic API call
 
 The Rainforest Automation Eagle API receives its commands via an XML structure. Here is an example:

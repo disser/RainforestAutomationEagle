@@ -69,6 +69,18 @@ response.price_timestamp
 response.price_label
 ```
 
+### get_message
+```py
+response = eagle.get_message(MacId="0xd8d5b90000000000")
+
+response.message_queue
+response.meter_status
+response.message_confirm_required
+response.message_confirmed
+response.message_read
+response.message_timestamp
+response.message_id)
+```
 
 ## Making a generic API call
 

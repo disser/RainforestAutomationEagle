@@ -20,13 +20,26 @@ device_list = eagle.get_device_list()
 
 ## Available API calls
 
-### 
+### get_device_list
 ```py
 response = eagle.get_device_list()
 
 response.num_devices
 response.device_model_id  # list of model IDs
 response.device_mac_id    # list of MAC-addresses
+```
+
+### get_network_info
+```py
+response = eagle.get_network_info(MacId="0xd8d5b90000000000")
+
+response.network_status
+response.network_ext_pan_id
+response.network_short_addr
+response.network_channel
+response.network_meter_mac_id
+response.network_link_strength
+response.network_timestamp
 ```
 
 ### get_device_info

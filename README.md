@@ -31,7 +31,7 @@ response.device_mac_id # list of MAC-addresses
 
 ### get_device_info
 ```py
-response = eagle.get_device_info(MacId=mac_id)
+response = eagle.get_device_info(MacId="0xd8d5b90000000000")
 
 response.device_date_code
 response.device_install_code

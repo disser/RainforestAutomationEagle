@@ -109,10 +109,10 @@ response.message_id)
 ```py
 response = eagle.get_historical_data(Type="demand", Period="Hour", MacId="0xd8d5b90000000000")
 
-response.timestamp
+response.timestamp     # list of timestamps
 response.data_size
 response.data_type
-response.value
+response.value         # list of KWs
 response.data_period
 ```
 

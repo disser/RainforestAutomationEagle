@@ -35,7 +35,9 @@ This command is created when you run:
 historical_data = eagle.get_historical_data(Type="demand", Period="Hour", MacId="0xd8d5b90000000000")
 ```
 
-Note that the function name `get_historical_data` corresponds to the XML `Name` field. All other fields correspond to the keyword arguments of the function. Knowing this you can now call any `get_` Eagle API function. The `eagle` object will generically generate the XML.
+Note that the function name `get_historical_data` corresponds to the XML `Name` field. All other fields correspond to the keyword arguments of the function. Knowing this you can now call any `get_` Eagle API function. The `eagle` object will generically generate the XML. 
+
+You will need to check the official [eagle REST API documentation](http://rainforestautomation.com/developer/) to get the full list of available functions.
 
 Unfortunately the **Eagle API does not return error codes** for maleformed API-calls. The only way to know that something is wrong is when you receive an empty response object.
 

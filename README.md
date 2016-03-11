@@ -116,3 +116,13 @@ response.value
 response.data_period
 ```
 
+### get_device_config
+```py
+response = eagle.get_device_config(MacId="0xd8d5b90000000000")
+
+response.update_mode
+response.update_enabled
+response.update_frequency
+response.config_ssh_enabled
+response.config_vpn_enabled
+```

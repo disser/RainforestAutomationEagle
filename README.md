@@ -1,4 +1,4 @@
-# RainforestAutomationEagle
+# Rainforest Automation - Eagle API Wrapper
 [unofficial] Rainforest Automation Eagle API Wrapper
 
 ## Dependencies:
@@ -15,5 +15,5 @@ eagle = Eagle(user="<cloud-ID>",
               ipaddress="<eagle-IP-address>")
 
 # make API request
-print(eagle.get_device_list())
+device_list = eagle.get_device_list()
 ```

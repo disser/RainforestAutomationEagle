@@ -63,4 +63,6 @@ This command is created when you run:
 historical_data = eagle.get_historical_data(Type="demand", Period="Hour", MacId=mac_id)
 ```
 
-Note that the function name `get_historical_data` corresponds to the XML `Name` field. All other fields correspond to the keyword arguments of the function.
+Note that the function name `get_historical_data` corresponds to the XML `Name` field. All other fields correspond to the keyword arguments of the function. Knowing this you can now call any `get_` Eagle API function. The `eagle` object will generically generate the XML.
+
+Unfortunately the **Eagle API does not return error codes** for maleformed API-calls. The only way to know that something is wrong is when you receive an empty response object.

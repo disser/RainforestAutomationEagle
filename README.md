@@ -25,8 +25,8 @@ device_list = eagle.get_device_list()
 response = eagle.get_device_list()
 
 response.num_devices
-response.device_model_id # list of model IDs
-response.device_mac_id # list of MAC-addresses
+response.device_model_id  # list of model IDs
+response.device_mac_id    # list of MAC-addresses
 ```
 
 ### get_device_info
